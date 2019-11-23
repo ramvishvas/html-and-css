@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section>
+
+    </section>
+
+    <section class="content">
+        <div class="left">
+            <img src="/image/yellow.jpg" alt="yellow" class="yellow anim">
+            <p>I have no clue what I'm ding here LOL!</p>
+            <img src="/image/squiggly.svg" alt="squig" class="squig">
+        </div>
+        <div class="rtght">
+            <div class="anim" data-delay="1s">
+                <h2>Get Yellow</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const image = document.querySelector('.anim');
+
+        observer = new IntersectionObserver(entries => {
+            console.log(entries);
+        })
+
+        observer.observe(image)
+    </script>
+</body>
+
+</html>
